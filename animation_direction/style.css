@@ -1,0 +1,50 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+body{
+	background-color:#1695a3;
+	color: rgba(255,255,255,.8);
+	-webkit-font-smoothing: antialiased;
+}
+
+.content{
+	padding: 100px 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.button{
+	padding: 10px 5px;
+}
+
+.box{
+	width: 200px;
+	height: 200px;
+	background-color: #D84440;
+	margin-top: 20px;
+	
+}
+
+@keyframes grow{
+   0%{
+   	width: 200px;
+   }
+   100%{
+   	width: 800px;
+   }
+}
+
+.normal{
+	animation: grow 2s ease-in-out 2 normal;
+}
+
+.reverse{
+	animation: grow 2s ease-in-out 2 reverse;
+}
+
+.alternate{
+	animation: grow 2s ease-in-out 2 alternate;
+}
