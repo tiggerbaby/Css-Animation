@@ -1,63 +1,85 @@
-/*
-Error: Invalid CSS after "li :": expected pseudoclass or pseudoelement, was " hover > ul.dro..."
-        on line 71 of style.scss
+* {
+  margin: 0;
+  padding: 0; }
 
-66: 
-67: ul.drop-menu li {
-68:   display:none;
-69: }
-70: 
-71: li : hover > ul.drop-menu li {
-72:   display: block;
-73: }
+body {
+  background-color: #1695a3;
+  color: rgba(255, 255, 255, 0.8);
+  -webkit-font-smoothing: antialiased; }
 
-Backtrace:
-style.scss:71
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/scss/static_parser.rb:276:in `pseudo'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/scss/static_parser.rb:153:in `simple_selector_sequence'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/scss/static_parser.rb:118:in `selector'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/scss/static_parser.rb:86:in `selector_comma_sequence'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/scss/parser.rb:1103:in `expr!'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/scss/static_parser.rb:20:in `parse_selector'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:427:in `visit_rule'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Users/alicewu/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"li :\": expected pseudoclass or pseudoelement, was \" hover > ul.dro...\"\A         on line 71 of style.scss\A \A 66: \A 67: ul.drop-menu li {\A 68:   display:none;\A 69: }\A 70: \A 71: li : hover > ul.drop-menu li {\A 72:   display: block;\A 73: }"; }
+.content {
+  padding: 100px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center; }
+
+nav {
+  padding: 50px; }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    background: #ddd;
+    border-radius: 5px; }
+    nav ul li {
+      float: left;
+      width: 150px;
+      height: 65px;
+      line-height: 65px;
+      position: relative;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.7);
+      cursor: pointer; }
+      nav ul li:hover {
+        background: #d5d5d5;
+        border-radius: 5px; }
+
+ul.drop-menu {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  padding: 0;
+  background: #1695a3; }
+  ul.drop-menu li {
+    background: #666;
+    color: rgba(255, 255, 255, 0.7); }
+    ul.drop-menu li:hover {
+      background: #606060; }
+    ul.drop-menu li:last-child {
+      border-radius: 0px 0px 5px 5px; }
+
+ul.drop-menu li {
+  display: none; }
+
+li:hover > ul.drop-menu li {
+  display: block; }
+
+/* Menu1 */
+li:hover > ul.drop-menu.menu-1 li {
+  perspective: 1000px;
+  opacity: 0; }
+  li:hover > ul.drop-menu.menu-1 li:nth-child(1) {
+    animation: menu1 300ms -150ms ease-in-out forwards; }
+  li:hover > ul.drop-menu.menu-1 li:nth-child(2) {
+    animation: menu1 300ms 0ms ease-in-out forwards; }
+  li:hover > ul.drop-menu.menu-1 li:nth-child(3) {
+    animation: menu1 300ms 150ms ease-in-out forwards; }
+  li:hover > ul.drop-menu.menu-1 li:nth-child(4) {
+    animation: menu1 300ms 300ms ease-in-out forwards; }
+  li:hover > ul.drop-menu.menu-1 li:nth-child(5) {
+    animation: menu1 300ms 450ms ease-in-out forwards; }
+  li:hover > ul.drop-menu.menu-1 li:nth-child(6) {
+    animation: menu1 300ms 600ms ease-in-out forwards; }
+
+@keyframes menu1 {
+  0% {
+    opacity: 0;
+    transform: rotateY(-90deg) translateY(30px); }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg) translateY(0px); } }
+
+/*# sourceMappingURL=style.css.map */
