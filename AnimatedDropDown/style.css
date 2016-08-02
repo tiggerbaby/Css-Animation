@@ -58,22 +58,46 @@ li:hover > ul.drop-menu li {
   display: block; }
 
 /* Menu1 */
-li:hover > ul.drop-menu.menu-1 li {
-  perspective: 1000px;
-  opacity: 0; }
-  li:hover > ul.drop-menu.menu-1 li:nth-child(1) {
-    animation: menu1 300ms -150ms ease-in-out forwards; }
-  li:hover > ul.drop-menu.menu-1 li:nth-child(2) {
-    animation: menu1 300ms 0ms ease-in-out forwards; }
-  li:hover > ul.drop-menu.menu-1 li:nth-child(3) {
-    animation: menu1 300ms 150ms ease-in-out forwards; }
-  li:hover > ul.drop-menu.menu-1 li:nth-child(4) {
-    animation: menu1 300ms 300ms ease-in-out forwards; }
-  li:hover > ul.drop-menu.menu-1 li:nth-child(5) {
-    animation: menu1 300ms 450ms ease-in-out forwards; }
-  li:hover > ul.drop-menu.menu-1 li:nth-child(6) {
-    animation: menu1 300ms 600ms ease-in-out forwards; }
-
+li:hover > ul.drop-menu.menu-1 {
+  perspective: 1000px; }
+  li:hover > ul.drop-menu.menu-1 li {
+    opacity: 0; }
+    li:hover > ul.drop-menu.menu-1 li:nth-child(1) {
+      animation-name: menu1;
+      animation-duration: 300ms;
+      animation-delay: -150ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+    li:hover > ul.drop-menu.menu-1 li:nth-child(2) {
+      animation-name: menu1;
+      animation-duration: 300ms;
+      animation-delay: 0ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+    li:hover > ul.drop-menu.menu-1 li:nth-child(3) {
+      animation-name: menu1;
+      animation-duration: 300ms;
+      animation-delay: 150ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+    li:hover > ul.drop-menu.menu-1 li:nth-child(4) {
+      animation-name: menu1;
+      animation-duration: 300ms;
+      animation-delay: 300ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+    li:hover > ul.drop-menu.menu-1 li:nth-child(5) {
+      animation-name: menu1;
+      animation-duration: 300ms;
+      animation-delay: 450ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+    li:hover > ul.drop-menu.menu-1 li:nth-child(6) {
+      animation-name: menu1;
+      animation-duration: 300ms;
+      animation-delay: 600ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
 @keyframes menu1 {
   0% {
     opacity: 0;
@@ -81,5 +105,83 @@ li:hover > ul.drop-menu.menu-1 li {
   100% {
     opacity: 1;
     transform: rotateY(0deg) translateY(0px); } }
+/* Menu2 */
+li:hover > ul.drop-menu.menu-2 {
+  perspective: 1000px; }
+  li:hover > ul.drop-menu.menu-2 li {
+    opacity: 0;
+    transform-origin: top center; }
+    li:hover > ul.drop-menu.menu-2 li:nth-child(1) {
+      animation: menu2 300ms -150ms ease-in-out forwards; }
+    li:hover > ul.drop-menu.menu-2 li:nth-child(2) {
+      animation: menu2 300ms 0ms ease-in-out forwards; }
+    li:hover > ul.drop-menu.menu-2 li:nth-child(3) {
+      animation: menu2 300ms 150ms ease-in-out forwards; }
+    li:hover > ul.drop-menu.menu-2 li:nth-child(4) {
+      animation: menu2 300ms 300ms ease-in-out forwards; }
+    li:hover > ul.drop-menu.menu-2 li:nth-child(5) {
+      animation: menu2 300ms 450ms ease-in-out forwards; }
+    li:hover > ul.drop-menu.menu-2 li:nth-child(6) {
+      animation: menu2 300ms 600ms ease-in-out forwards; }
+@keyframes menu2 {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg); }
+  60% {
+    transform: rotateX(-60deg); }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg); } }
+/* Menu3 */
+li:hover > ul.drop-menu.menu-3 {
+  perspective: 1000px; }
+  li:hover > ul.drop-menu.menu-3 li {
+    opacity: 0; }
+    li:hover > ul.drop-menu.menu-3 li:nth-child(1) {
+      animation: menu3 300ms -150ms ease-in-out forwards; }
+    li:hover > ul.drop-menu.menu-3 li:nth-child(2) {
+      animation: menu3 300ms 0ms ease-in-out forwards; }
+    li:hover > ul.drop-menu.menu-3 li:nth-child(3) {
+      animation: menu3 300ms 150ms ease-in-out forwards; }
+    li:hover > ul.drop-menu.menu-3 li:nth-child(4) {
+      animation: menu3 300ms 300ms ease-in-out forwards; }
+    li:hover > ul.drop-menu.menu-3 li:nth-child(5) {
+      animation: menu3 300ms 450ms ease-in-out forwards; }
+    li:hover > ul.drop-menu.menu-3 li:nth-child(6) {
+      animation: menu3 300ms 600ms ease-in-out forwards; }
+@keyframes menu3 {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) translateY(-60px); }
+  80% {
+    transform: scale(1.2) tanslateY(10px); }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0px); } }
+/* Menu4 */
+li:hover > ul.drop-menu.menu-4 {
+  perspective: 1000px; }
+  li:hover > ul.drop-menu.menu-4 li {
+    opacity: 0;
+    transform-origin: top right; }
+    li:hover > ul.drop-menu.menu-4 li:nth-child(1) {
+      animation: menu4 300ms -150ms ease-in-out forwards; }
+    li:hover > ul.drop-menu.menu-4 li:nth-child(2) {
+      animation: menu4 300ms 0ms ease-in-out forwards; }
+    li:hover > ul.drop-menu.menu-4 li:nth-child(3) {
+      animation: menu4 300ms 150ms ease-in-out forwards; }
+    li:hover > ul.drop-menu.menu-4 li:nth-child(4) {
+      animation: menu4 300ms 300ms ease-in-out forwards; }
+    li:hover > ul.drop-menu.menu-4 li:nth-child(5) {
+      animation: menu4 300ms 450ms ease-in-out forwards; }
+    li:hover > ul.drop-menu.menu-4 li:nth-child(6) {
+      animation: menu4 300ms 600ms ease-in-out forwards; }
+@keyframes menu4 {
+  0% {
+    opacity: 0;
+    transform: rotate(-30deg) translateX(30px); }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg) translateX(0px); } }
 
 /*# sourceMappingURL=style.css.map */
